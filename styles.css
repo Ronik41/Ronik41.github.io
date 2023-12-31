@@ -59,7 +59,7 @@
     height: 120%;
     width: 100%;
     border-left: 0.133333333rem solid #FC6D6D;
-    animation: typing 1.5s steps(11) infinite;
+    animation: typing 1.5s steps(10) infinite;
 }
 
 @keyframes typing {
@@ -346,6 +346,69 @@
     width: 80%;
 }
 
+.texttype {
+    display:inline-flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #141414;
+}
+
+.texttype .static-txt {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 400;
+} 
+
+.texttype .dynamic-txts {
+    margin-left: 1rem;
+    height: 6rem;
+    line-height: 6rem;
+    overflow: hidden;
+    
+}
+
+.dynamic-txts li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 4rem;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -24rem;
+    }
+
+}
+
+.dynamic-txts li span{
+    position: relative;
+
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    background: #141414;
+    position: absolute;
+    left: 0;
+    height: 120%;
+    width: 100%;
+    border-left: 0.133333333rem solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -2.33333333rem 0 2.33333333rem;
+    }
+}
+
 /*Mobile Responsive */
 @media screen and (max-width: 768px) {
     .main__container {
@@ -461,7 +524,7 @@
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%), 
-        url('/images/pic3.jpg');
+        url('/images/electriumgroupphoto.jpg');
         background-size: cover;
         position: relative;
         color: #fff;
@@ -472,7 +535,7 @@
         to bottom,
         rgba(0, 0, 0, 0) 0%,
         rgba(17, 17, 17, 0.6) 100%), 
-        url('/images/pic4.jpg');
+        url('/images/Screenshot_19.png');
 }
 
 .services h2 {
